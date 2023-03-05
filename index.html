@@ -1,0 +1,9 @@
+<!-- this is the index i served for firebase proxy -->
+
+
+
+<script>
+    window.localStorage.setItem("user",window.location.href.split(".")[0].toString().replace("http://","").replace("https://",""))
+    link=`https://www.bowandbeautiful.com/`+window.localStorage.getItem("user")
+    document.write('<iframe src="' + link + '" height="100%" width="100%" style="border:none;" title="W3Schools Free Online Web Tutorials"></iframe>')
+</script>
